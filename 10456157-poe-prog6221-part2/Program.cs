@@ -56,9 +56,16 @@ namespace CyberAwarenessBot
     { "password", "🔐 Use strong, unique passwords and avoid using names or birthdays." },
     { "privacy", "🛡️ Adjust your social media and app settings to enhance privacy." },
     { "scam", "🚨 Watch out for offers that seem too good to be true — they're usually scams." }
+
+
 };
 
-
+            List<string> phishingTips = new List<string>
+{
+    "📧 Never click on links from unknown senders.",
+    "🔍 Check for spelling mistakes in email addresses and URLs.",
+    "📨 Be suspicious of emails creating urgency or fear."
+};
 
             while (true)
             {
