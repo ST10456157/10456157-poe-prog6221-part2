@@ -1,5 +1,6 @@
 ﻿using System;
 using NAudio.Wave;
+//Microsoft, 2024. Best practices for organizing code. [online] Available at: https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/ [Accessed 23 May 2025]
 
 namespace CyberAwarenessBot
 {
@@ -51,6 +52,7 @@ namespace CyberAwarenessBot
             string favoriteTopic = "";
             string lastTopic = "";
             // keyword detection
+            //Microsoft, 2024. How to use Dictionary in C#. [online] Available at: https://learn.microsoft.com/en-us/dotnet/api/system.collections.generic.dictionary-2 [Accessed 23 May 2025]
             Dictionary<string, string> keywordResponses = new Dictionary<string, string>
 {
     { "password", "🔐 Use strong, unique passwords and avoid using names or birthdays." },
@@ -104,6 +106,7 @@ namespace CyberAwarenessBot
                 else if (input.Contains("worried") || input.Contains("frustrated") || input.Contains("curious")) command = "sentiment";
 
                 // Switch-style response
+                //Microsoft, 2024. C# switch Statement. [online] Available at: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/selection-statements#the-switch-statement [Accessed 23 May 2025]
                 switch (command)
                 {
                     case "password":
@@ -159,6 +162,7 @@ namespace CyberAwarenessBot
                             Console.WriteLine("📘 I'm still learning more about that. Ask another question!");
                         break;
                     //sentimental responses
+                    //IBM, 2023. Building conversational flow in chatbots. [online] Available at: https://cloud.ibm.com/docs/assistant?topic=assistant-dialog-build [Accessed 23 May 2025]
                     case "sentiment":
                         if (input.Contains("worried"))
                             Console.WriteLine("🤝 It's okay to be worried. Let's take this one step at a time.");
